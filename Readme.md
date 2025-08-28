@@ -66,3 +66,11 @@ Prerequisites: Docker Desktop with Compose. For GPU, install appropriate drivers
 - 🚀 Migrate and run:
   - `python iot_backend/manage.py migrate`
   - `python iot_backend/manage.py runserver 0.0.0.0:8080`
+
+## 🤖 Data enrichment and AI summaries
+
+- NIST CVE enrichment and AI summarization are triggered on device creation or via management utilities.
+- Batch update (management command):
+  - `python BackEnd/iot_backend/manage.py update_threats`
+- Utility script (optional): [BackEnd/update_all_device_threats.py](BackEnd/update_all_device_threats.py)
+- Ollama endpoints and examples (generate/chat/embed, model ops): see [BackEnd/iot_backend/api.md](BackEnd/iot_backend/api.md)
