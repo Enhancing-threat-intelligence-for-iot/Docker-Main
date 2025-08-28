@@ -17,6 +17,13 @@ Prerequisites: Docker Desktop with Compose. For GPU, install appropriate drivers
     -   `docker compose -f Compose.yaml -f Compose.nvidia.yaml up -d`
 -   AMD GPU:
     -   `docker compose -f Compose.yaml -f Compose.amd.yaml up -d`
+### 🛑 Stop the services
+- Remove the image and stop services 
+    - `docker compose down -v` <br>
+  <em>Note: `-v` will delete the database along with recently added IoT device(s)</em>
+
+- Stop Services
+    - `docker-compose stop` 
 
 ## 📂 Accessible links
 
