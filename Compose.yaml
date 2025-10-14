@@ -35,7 +35,7 @@ services:
     # Frontend (SvelteKit preview for now)
     frontend:
         build:
-            context: ./PolySectorMap
+            context: ./Frontend
             dockerfile: dockerfile
             args:
                 - VITE_BACKEND_URL=http://localhost:8080
