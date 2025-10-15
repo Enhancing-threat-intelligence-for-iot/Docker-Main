@@ -11,6 +11,16 @@ A full‑stack app to explore IoT devices, link them to critical infrastructure 
 
 Prerequisites: Docker Desktop with Compose. For GPU, install appropriate drivers and Docker toolkit.
 
+<i>Using the `frontend-and-backend-images.tar` you can skip building the images local entirely:</i>
+
+First run this command to load the images:
+
+`docker load -i frontend-and-backend-images.tar`
+
+[you can download the `frontend-and-backend-images.tar` file here](https://drive.google.com/file/d/1_Kn03Pox7IW2C7wbpI9gT5pL-MwlSWoh/view?usp=sharing)
+
+Then run one of the following commands
+
 -   CPU:
     -   `docker compose up -d --build`
 -   NVIDIA GPU:
@@ -37,6 +47,8 @@ Prerequisites: Docker Desktop with Compose. For GPU, install appropriate drivers
 ## 💾 Backend/Django links:
 
 -   Admin: http://localhost:8080/admin/
+    -   Username: `admin`
+    -   Password: `admin`
 -   API: http://localhost:8080/api/
 -   Swagger UI: http://localhost:8080/docs/
 -   ReDoc: http://localhost:8080/redoc/redoc/
